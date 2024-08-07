@@ -1,5 +1,10 @@
-export { NextAuth as middleware } from "@/app/pages/api/auth/[...nextauth]"; // TODO: Fix Issue with NextAuth
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+
+export function middleware(request: NextRequest) {
+    return NextResponse.redirect(new URL('/home', request.url));
+}
 
 export const config = {
-    matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*"]
+    matcher: "/",
 }
