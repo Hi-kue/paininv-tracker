@@ -90,6 +90,13 @@ http://localhost:3000
 
 > **NOTE**: All applications build using Next.js will usually run on port `3000`, but this can be changed within the `next.config.js` file. 
 
+# Overdue Tasks & Todo's
+- [ ] Add Jest for Testing & CI/CD
+- [ ] Linting & Code Quality Checks with Eslint or Synk
+- [ ] Add NextAuth.js for Authentication (Signin, Signup)
+- [ ] **Feature**: Add Filter & Search Functionality
+- [ ] **Feature**: Add Recipe Suggestions AI based on Pantry Items
+
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
