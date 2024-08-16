@@ -5,6 +5,8 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 import { cn } from "@/lib/utils";
+import Link from "next/link";
+import { Url } from "next/dist/shared/lib/router/router";
 
 export interface DockProps extends VariantProps<typeof dockVariants> {
   className?: string;
@@ -72,6 +74,7 @@ export interface DockIconProps {
   mouseX?: any;
   className?: string;
   children?: React.ReactNode;
+  link?: Url;
   props?: PropsWithChildren;
 }
 
@@ -82,6 +85,7 @@ const DockIcon = ({
   mouseX,
   className,
   children,
+  link,
   ...props
 }: DockIconProps) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -114,7 +118,9 @@ const DockIcon = ({
       )}
       {...props}
     >
-      {children}
+      <Link href={link!}>
+        {children}
+      </Link>
     </motion.div>
   );
 };

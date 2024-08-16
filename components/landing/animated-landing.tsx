@@ -57,16 +57,20 @@ export default function AnimatedLanding() {
 						transition={{ duration: 0.8, ease: "easeOut" }}
 					>
 						<AnimatedGradientText>
-							🚧 <span className="text-black dark:text-white">Under Construction </span> 
-              <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
+							🚧{" "}
+							<span className="text-black dark:text-white">
+								Under Construction{" "}
+							</span>
+							<hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
 							<span
 								className={cn(
 									`inline animate-gradient bg-gradient-to-r from-[#408cff] via-[#9c40ff] to-[#408cff] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
 								)}
 							>
-							v1.0.0 
+								v1.0.0
 							</span>{" "}
 						</AnimatedGradientText>
+						<br />
 						<Image
 							src="/imgs/paninv-tracker-logo.png"
 							width={100}
@@ -79,7 +83,7 @@ export default function AnimatedLanding() {
 							animate={{ scale: 1, opacity: 1 }}
 							transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
 						>
-							Paninv Tracker 2.0
+							Paninv Tracker
 						</motion.h1>
 						<motion.p
 							className="max-w-[700px] text-xl text-gray-500 mt-2 font-normal"

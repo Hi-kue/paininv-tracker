@@ -3,11 +3,11 @@ import Link from "next/link";
 import appConfig from "@/lib/app.config";
 import { buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export function SiteHeader() {
 	return (
-		<header className="bg-background backdrop-filter backdrop-blur-lg bg-opacity-20 sticky top-0 z-40 w-full">
+		<header className="sticky top-0 z-20 bg-white dark:bg-slate-950 backdrop-blur-md backdrop-filter sm:backdrop-blur-lg sm:backdrop-filter">
 			<div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
 				<div className="flex flex-1 items-center justify-end space-x-4">
 					<nav className="flex items-center space-x-1">
@@ -41,7 +41,7 @@ export function SiteHeader() {
 								<span className="sr-only">Twitter</span>
 							</div>
 						</Link>
-						<ThemeToggle />
+						<ModeToggle />
 					</nav>
 				</div>
 			</div>

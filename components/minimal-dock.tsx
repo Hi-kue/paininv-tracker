@@ -12,16 +12,16 @@ export function MinamalDock() {
 				direction="middle"
 				className="rounded-xl shadow-lg ring-1 ring-black/5 bg-white/5 backdrop-blur-xl hover:shadow-xl"
 			>
-				<DockIcon>
+				<DockIcon link="https://github.com/Hi-kue/paininv-tracker">
 					<Icons.gitHub className="size-6 text-black dark:text-white" />
 				</DockIcon>
-				<DockIcon>
+				<DockIcon link="/">
 					<Icons.googleDrive className="size-6" />
 				</DockIcon>
-				<DockIcon>
+				<DockIcon link="https://www.linkedin.com/in/hikue/s">
 					<Icons.linkedin className="size-6" />
 				</DockIcon>
-				<DockIcon>
+				<DockIcon link="/">
 					<Icons.obsidian className="size-6" />
 				</DockIcon>
 			</Dock>
