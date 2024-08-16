@@ -4,7 +4,7 @@ import { SiteHeader } from "@/components/site-header";
 
 export default function Home() {
 	return (
-		<main>
+		<main className="w-full h-full">
 			<SiteHeader />
 			<SiteBanner />
 			<AnimatedLanding />
