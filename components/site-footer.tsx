@@ -75,8 +75,8 @@ export function SiteFooter() {
           <div className="mb-12 flex-col flex gap-4">
             <Link href="/" className="flex items-center gap-2">
               <Image
-                  src="/ecotrace-logo.png"
-                  alt="Magic UI"
+                  src="/imgs/paninv-tracker-logo.png"
+                  alt="Paninv Tracker Logo"
                   width={32}
                   height={32}
                   className="rounded-lg text-primary"

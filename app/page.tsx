@@ -1,14 +1,13 @@
-import Link from "next/link";
+import AnimatedLanding from "@/components/landing/animated-landing";
+import { SiteBanner } from "@/components/site-banner";
+import { SiteHeader } from "@/components/site-header";
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24">
-			<div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-				<Link href="/dashboard" className="flex items-center gap-2">
-					{" "}
-					Go To Dashboard
-				</Link>
-			</div>
+		<main>
+			<SiteHeader />
+			<SiteBanner />
+			<AnimatedLanding />
 		</main>
 	);
 }

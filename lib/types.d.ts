@@ -50,3 +50,10 @@ export interface User extends Record<string, any> {
     password: string
     salt: string
 }
+
+export interface NavItem {
+    title: string
+    href?: string
+    disabled?: boolean
+    external?: boolean
+}
